@@ -1,0 +1,18 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Raw NYC TLC data (large) ---
+# Re-download the monthly parquet from
+# https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+# The built lookups in data/artifacts/ ARE committed, so the env/training run
+# without re-parsing the raw trips.
+data/*.parquet
+
+# --- OS / editor cruft ---
+.DS_Store
+.ipynb_checkpoints/
+.vscode/
+.idea/
