@@ -167,5 +167,5 @@ if __name__ == '__main__':
         print('saved test frame; total day earnings = $%.0f, %d segments' % (total, len(segments)))
     else:
         anim = FuncAnimation(fig, update, frames=len(frame_times), interval=1000 / FPS, blit=False)
-        anim.save('../result/plots/driver_day.gif', writer=PillowWriter(fps=FPS), dpi=80)
-        print('saved ../result/plots/driver_day.gif  (%d frames, $%.0f day)' % (len(frame_times), total))
+        anim.save('../result/driver_day.gif', writer=PillowWriter(fps=FPS), dpi=80)
+        print('saved ../result/driver_day.gif  (%d frames, $%.0f day)' % (len(frame_times), total))

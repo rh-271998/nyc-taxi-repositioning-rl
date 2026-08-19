@@ -121,7 +121,7 @@ demand as the clock advances, the car's style shows whether it's **searching**,
 **repositioning empty**, or **carrying a passenger**, and the side panel tracks cumulative
 earnings:
 
-![A day in the life of the learned driver](result/plots/driver_day.gif)
+![A day in the life of the learned driver](result/driver_day.gif)
 
 ---
 
