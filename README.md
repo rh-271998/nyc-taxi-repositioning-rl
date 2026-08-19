@@ -114,6 +114,15 @@ a sensible repositioning instinct that emerged purely from training.
 
 ![Repositioning flow map](result/plots/fig_repositioning_map.png)
 
+### A day in the life
+
+Watching one driver's full day under the greedy Double DQN policy — zones recolor by
+demand as the clock advances, the car's style shows whether it's **searching**,
+**repositioning empty**, or **carrying a passenger**, and the side panel tracks cumulative
+earnings:
+
+![A day in the life of the learned driver](result/plots/driver_day.gif)
+
 ---
 
 ## Honest caveats
@@ -147,7 +156,8 @@ src/
   qLearning_agent.py, train.py          # M2: tabular Q-learning
   model.py, buffer.py, dqn_agent.py, train_dqn.py   # M3/M4: DQN + Double DQN (double flag)
   eval.py           # paired 1000-seed evaluation + overestimation diagnostic
-  figures.py, map_figure.py, graph.py   # figures
+  figures.py, map_figure.py, graph.py   # static figures
+  animate_day.py                        # animated 'day in the life' GIF
 result/
   qTable.npy, qnet.pth, qnet_ddqn.pth   # trained models
   plots/                                # figures
